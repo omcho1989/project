@@ -1,0 +1,18 @@
+:root {
+    --color1: #890024;
+    --color2: #c5023c;
+    --color3: #ffffff;
+    --color4: #000000;
+}
+
+header {
+    background-color: var(--color1);
+}
+
+main {
+    background-color: var(--color2);
+}
+
+footer {
+    background-color: var(--color1);
+}

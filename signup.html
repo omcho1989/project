@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MSP Guys</title>
+    <meta name="author" content="Joseph Purkiss">
+    <meta name="description" content="Submission form for 'The MSP Guys'">
+    <link rel="stylesheet" href="styles/msp.css">
+    <script src="scripts/msp.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Subit a Ticket</a>
+            <a href="">About Us</a>
+            <a href="">Sign Up</a>
+        </nav>
+    </header>
+    <main>
+    <form method="get" action="review.html">
+        <fieldset>
+        <legend>Our Products</legend>
+        <label>Product Name
+            <select id="product" name="product" required>
+                <option value="">Please select &#9662;</option>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star-a" value="5" required />
+                <label for="star-a">5 &#9733;</label>
+        
+                <input type="radio" name="stars" id="star-b" value="4" required />
+                <label for="star-b">4 &#9733;</label>
+        
+                <input type="radio" name="stars" id="star-c" value="3" required />
+                <label for="star-c">3 &#9733;</label>
+        
+                <input type="radio" name="stars" id="star-d" value="2" required />
+                <label for="star-d">2 &#9733;</label>
+        
+                <input type="radio" name="stars" id="star-e" value="1" required />
+                <label for="star-e">1 &#9733;</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+                <legend>Date of Install or Purchase</legend>
+                <div class="date-of-installation"></div>
+                <label><input type="date" id="installation-date" name="Date" required></label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Useful Features</legend>
+            <div class="checkboxes">
+            <label>(Select all that apply)<id="useful-features" name="useful-features" required></label> 
+            <label><input type="checkbox" id="transport" name="transport" value="yes">Transportability</label>
+            <label><input type="checkbox" id="compact" name="compact" value="yes">Compact</label>
+            <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes">Ease of use</label>
+            <label><input type="checkbox" id="function" name="function" value="yes">Functionality</label>   
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Review (optional)</legend>
+            <label><textarea type="textarea" id="review" name="review" rows="5" cols="75"></textarea></label>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Your Name</legend>
+            <label><input type="text" name="user-name" required></label>
+        </fieldset>
+
+        <div class="submit-button">
+        <input type="submit" value = "submit my review" required>
+        </div>    
+
+    </form> 
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 🏍️ Joseph Purkiss 🏍️ USA</p>
+        <p>Last Modified <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
