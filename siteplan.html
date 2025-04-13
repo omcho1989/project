@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="The MSP Guys">
+        <img src="images/logo.jpg" alt="The MSP Guys" loading="lazy">
         <h1>The MSP Guys</h1>
         <button class="menu-button" aria-label="Toggle Menu">☰</button>
         <nav>
@@ -37,56 +37,48 @@
         </div>
         <div class="services">
         <figure>
-            <img src="images/voip.jpeg" alt="VOIP">
+            <img src="images/voip.jpeg" alt="VOIP" loading="lazy">
             <figcaption>VOIP</figcaption>
             <div class="description">Voice over IP services for seamless communication.</div>
         </figure>
         <figure>
-            <img src="images/servers.jpeg" alt="Server Maintenance">
+            <img src="images/servers.jpeg" alt="Server Maintenance" loading="lazy">
             <figcaption>Server Maintenance</figcaption>
             <div class="description">Reliable server maintenance to keep your systems running.</div>
 
         </figure>
         <figure>
-            <img src="images/backups.jpeg" alt="Backups">
+            <img src="images/backups.jpeg" alt="Backups" loading="lazy">
             <figcaption>Backups</figcaption>
             <div class="description">Secure and automated data backup solutions.</div>
 
         </figure>
         <figure>
-            <img src="images/business.jpeg" alt="Personalized Service">
+            <img src="images/business.jpeg" alt="Personalized Service" loading="lazy">
             <figcaption>Personalized Service</figcaption>
             <div class="description">Tailored IT services to meet your business needs.</div>
         </figure>
         <figure>
-            <img src="images/help_desk.jpeg" alt="Help Desk">
+            <img src="images/help_desk.jpeg" alt="Help Desk" loading="lazy">
             <figcaption>Help Desk</figcaption>
             <div class="description">24/7 help desk support for all your IT issues.</div>
         </figure>
         <figure>
-            <img src="images/low_price.jpeg" alt="Low Prices">
+            <img src="images/low_price.jpeg" alt="Low Prices" loading="lazy">
             <figcaption>Cheap Prices</figcaption>
             <div class="description">Affordable IT services without compromising quality.</div>
         </figure>
         </div>
     </main>
     <footer>
+        <p id="availability"></p>
         <p><span id="currentyear"></span> 🏍️ Joseph Purkiss 🏍️ USA</p>
         <p>Last Modified <span id="lastmodified"></span></p>
+        <p id="visit-count"></p>
 
-        <div class="frequently asked questions (scnearios)">
+        <div class="faq">
             <p>FAQ's</p>
-            <p>How much do your services cost? We charge by 15 minutes, not by the hour. An hour
-                coming to $75.00
-            </p>
-            <p>Can anyone from anywhere use your services? While we are a Utah based company, needing to do 
-                server maintenance or physically setup computers, phones and devices, we offer a number of
-                services that can be done remotely like backups.
-            </p>
-            <p>What times are you available? We generally are open from 8 to 5, Monday through Friday. We can take weekend calls
-                for emergency services on business's that are open through the weekend. Please note that our tech's are also
-                home for the weekend and in that sense may not be ready to help expediently.
-            </p>
+            <div id="faq-list"></div>
         </div>
     </footer>
 </body>
